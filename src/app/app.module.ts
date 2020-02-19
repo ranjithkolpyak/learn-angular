@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {NavbarComponent} from './navbarComponent/navbar.component';
 import { AppBodyComponent } from './app-body/app-body.component';
 import {ErrorComponent} from './error-component/error.component';
 import {WarningComponent} from './warning-component/warning.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import {WarningComponent} from './warning-component/warning.component';
     NavbarComponent,
     AppBodyComponent,
     ErrorComponent,
-    WarningComponent
+    WarningComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
